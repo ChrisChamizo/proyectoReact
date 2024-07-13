@@ -1,0 +1,72 @@
+Versión de react: Vite
+
+Seleccionar comand prompt en la consola y chequear que diga cmd
+Instalación de react: Ingresar a la consola del vsc (estoy posicionado en el proyecto de react) 
+
+Introducir los siguientes comandos para la instalacion. 
+npm créate vite@latest (tocar enter y pregunta el nombre del proyecto)
+
+Seleccionar el fremework, en este caso en React.
+Seleccionar la variante: JavaScript
+Luego enter (seguro te pregunta si quiero instalar algo y apretar la `y`)
+
+Luego procedo con la instalación
+
+1) cd vite-projecx
+2) npm install
+3) npm run dev
+4) si aparece la url local, network es porque esta todo ok 
+5) Luego hacer control + click en el url local para ver si react esta funcionando
+
+Para salir del proceso: control+c
+Levantar de nuevo el proceso: en la consola poner el comando: npm run dev
+
+ORGANIZACION DE ARCHIVOS DE UN PROYECTO EN REACT
+
+vite.config.js contiene la configuracion de vite. NO hay que tocarlo.
+
+README.MD Informacion del proyecto.
+
+package.json son paquetes json  que contienen funciones y cada funcion cumple un objetivo diferente. Puedo agregar paquetes para mejorar mi react. 
+Buscar paquetes en www.npmjs.com
+
+Las dependencias son un registro de los paquetes que instale para mi proyecto.
+
+Package-lock.json Este archivo tiene instalado cada uno de los paquetes que hacen el funcionamiento de react. Archivo de informacion. NO TOCAR.
+
+Node modules: Este archivo contiene TODAS LAS CARPETAS que hacen el funcionamiento de react.
+
+.gitignore: Me sirve para indicarle al archivo node modules que no se suba a github. 
+
+La carpeta src contiene varios archivos: 
+Assets: En esta carpeta van las imagenes, audios, videos, archivos PDF
+app.css: Este archivo contiene el CSS del proyecto. El nombre del archivo CSS tiene que ser el mismo nombre que el archivo .jsx (Ambos archivos la primera letra en mayuscula)
+app.jsx
+index.css
+main.jsx: En este archivo se visualizan los componentes. Los llamo en el main como si fuera una etiqueta HTML.
+
+LOS COMPONENTES LOS TENEMOS QUE GUARDAR EN UNA CARPETA dentro de la carpeta src
+Hero,footer,section, main
+
+FORMAS DE EXPORTAR FUNCIONES EN REACT (3 FORMAS)
+export default nombreFuncion (esta forma no se usa mas)
+Exportar la funcion entre llaves --> export {nombreComponente} y arriba de todo en los import poner lo siguiente: import {nombreComponente} from "./RutaDelComponente (usar esta)
+La tercer forma de exportar es colocar export delante del nombre de la funcion.
+
+PARA EMPEZAR A TRABAJAR CON UN PROYECTO NUEVO EN REACT TENEMOS QUE ELIMINAR EL ESTILO QUE VIENE POR DEFECTO.
+
+Paso 1)
+Eliminar todo el contenido del archivo app.jsx
+Eliminar todo el contenido del archivo App.css
+Eliminar todo el contenido del archivo Index.css
+
+Paso 2)
+ 1) Creo los componentes nesesarios e importo en la primera linea los css de cada componente.
+ 2)  Creo la funcion de cada componente. Dentro de la funcion de cada componente hasta el return () va codigo JavaScript
+ 3) el return () Dentro del return va codigo jsx --> HTML y JS
+ 4) exporto la funcion
+
+SE USA UNA FUNCION NOMBRADA O FUNCION FLECHA DENTRO DE UN EVENTO CUANDO SON MUCHAS LINEAS DE CODIGO
+return (
+<button onClick ={() =>{console.log("Hiciste click")}}>Hace click </button>
+)
