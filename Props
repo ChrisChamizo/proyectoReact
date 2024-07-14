@@ -1,1 +1,25 @@
+Las props son mecanismos para pasar datos de un componente a otro. Permite que los componentes sean reutilizables y configurables.
+Si el padre es el body y mi hijo es el hero, el main y el footer y tengo un dato, ese dato se lo puedo pasar a mis hijos.
+
+Utilizamos el archivo Main.jsx como padre.
+Las props se colocan dentro de las etiquetas correspondientes en el archivo Main.jsx como atributo.
+<Header title="Bienvenidos a mi pagina web"/>
+Luego se lo tengo que pasar al header.jsx
+
+function Header(props)
+Como tenemos varios props, podemos hacer un destructuring, se agregan llaves dentro de la funcion y colocamos la propiedad de la props. Nos queda de la siguiente manera
+
+function Header({Nombre de la propiedad de la props})
+function Haeader({contenido,otroContenido})
+
+Proptype: Es una forma de hacer validacion de tipos en las props que pasamos a nuestro componente. Esto es util para asegurarnos que los componentes reciban el dato en
+el formato esperado. Para utilizar los proptype tenemos que instalarnos una libreria o paquete desde npmjs.com (prop-types)
+paramos el proceso, instalamos el paquete con el comando npm i prop-types y luego levantamos el proceso con el comando npm run dev.
+En los componentes que vamos a utilizar el proptypes debemos importarlo.
+
+Luego fuera de la funcion usamos el proptype
+Header.propType ={
+  Title:Proptype.String.isRequired .... lo que le estoy diciendo es que el tipo de dato que reciba  el titulo sea String
+
+
 
