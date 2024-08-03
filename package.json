@@ -1,7 +1,7 @@
 {
-  "name": "tpfinalconreact",
+  "name": "proyectoReact",
   "private": true,
-  "homepage": "https://chrischamizo.github.io/TPfinalconReact/",
+  "homepage":"https://github.com/ChrisChamizo/proyectoReact",
   "version": "0.0.0",
   "type": "module",
   "scripts": {
