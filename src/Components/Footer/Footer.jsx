@@ -3,7 +3,7 @@
 function Footer(){
     return(
     <footer>
-        <h1>Soy el Footer</h1>
+        <h1></h1>
     </footer>
 )
 }
