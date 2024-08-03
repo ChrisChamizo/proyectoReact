@@ -23,8 +23,13 @@ const App = () => {
     console.log(pagina);
   }
 
+  function irInicio(){
+    setPagina(1)
+  }
+
   return (
     <div>
+        <button style={{ marginRight: '10px' }} onClick={irInicio}>Ir al inicio</button>
       <button onClick={irSiguiente} disabled={pagina <= 42 ? "" : "disabled"}   >Pagina Siguiente</button>
       {personajes.map((personaje) => (
         <div key={personaje.id}>
